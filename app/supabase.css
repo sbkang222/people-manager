@@ -20,3 +20,38 @@
 @media(max-width:800px){
   .panel .table{max-height:420px}
 }
+
+.nameLink{border:0;background:none;padding:0;color:var(--text);font-weight:700;cursor:pointer;text-align:left;text-decoration:none}.nameLink:hover{color:var(--blue)}
+.historyTable td:first-child{text-align:left}.historyTable td:nth-child(2){text-align:center}
+.historyTableWrap{max-height:250px;overflow-x:auto;overflow-y:auto;scrollbar-gutter:stable}.historyTable thead th{position:sticky;top:0;z-index:2}.historyTable tbody tr{height:66px}
+.historyModal{width:min(940px,100%);max-height:min(760px,calc(100vh - 40px));display:flex;flex-direction:column}.historyBody{padding:20px 26px;overflow-y:auto}.historyEmpty{text-align:center;color:var(--muted);padding:36px 12px}.historyTableWrap{overflow:auto;border:1px solid #1f2937}.historyTable{width:100%;min-width:760px;border-collapse:collapse}.historyTable th,.historyTable td{border:1px solid #1f2937;padding:10px 12px;text-align:center}.historyTable th{position:sticky;top:0;z-index:1;background:#f8fafc;color:#111827;font-size:12px}.historyTable td{font-size:13px;background:#fff}.historyTable td:nth-child(2){text-align:left}.historyTable td>strong{display:block}.historyTable td>small{display:flex;align-items:center;gap:7px;margin-top:6px;color:var(--muted);font-size:10px}.historyAction{display:inline-block;border-radius:20px;padding:3px 7px;font-size:10px;white-space:nowrap}.historyAction.insert{background:#eaf8f0;color:#238758}.historyAction.update{background:#edf0ff;color:#4361ee}.historyAction.delete{background:#fff0f1;color:#c63d48}@media(max-width:600px){.historyModal{max-height:calc(100vh - 24px)}.historyBody{padding:12px}}
+
+/* Refined history data table */
+.historyModal{overflow:hidden;box-shadow:0 24px 70px rgba(15,23,42,.24)}
+.historyModal .modalHead{background:linear-gradient(180deg,#fff 0%,#fbfcff 100%)}
+.historyModal .modalHead h2{letter-spacing:-.02em}
+.historyModal .modalHead p{font-size:12px}
+.historyModal .historyBody{background:#f7f9fc;padding:22px 26px}
+.historyModal .historyTableWrap{max-height:244px;overflow-x:auto;overflow-y:auto;scrollbar-gutter:stable;border:1px solid #dfe5ee;border-radius:12px;background:#fff;box-shadow:0 4px 16px rgba(30,41,59,.06)}
+.historyModal .historyTable{width:100%;min-width:760px;border-collapse:separate;border-spacing:0;table-layout:fixed}
+.historyModal .historyTable th{height:44px;padding:0 16px;position:sticky;top:0;z-index:3;border:0;border-bottom:1px solid #dfe5ee;background:#eef2f8;color:#556176;font-size:11px;font-weight:800;letter-spacing:.04em;text-align:center;box-shadow:0 2px 5px rgba(15,23,42,.04)}
+.historyModal .historyTable td{height:66px;padding:9px 16px;border:0;border-bottom:1px solid #edf1f6;background:#fff;color:#303949;font-size:12px;text-align:center;vertical-align:middle;transition:background-color .15s ease}
+.historyModal .historyTable tbody tr:last-child td{border-bottom:0}
+.historyModal .historyTable tbody tr:hover td{background:#f8faff}
+.historyModal .historyTable th:first-child,.historyModal .historyTable td:first-child{width:25%;text-align:left}
+.historyModal .historyTable th:nth-child(2),.historyModal .historyTable td:nth-child(2){width:20%;text-align:center}
+.historyModal .historyTable th:nth-child(3),.historyModal .historyTable td:nth-child(3){width:18%}
+.historyModal .historyTable th:nth-child(4),.historyModal .historyTable td:nth-child(4){width:17%}
+.historyModal .historyTable th:nth-child(5),.historyModal .historyTable td:nth-child(5){width:20%}
+.historyModal .historyTable td>strong{display:block;overflow:hidden;color:#182033;font-size:13px;font-weight:800;text-overflow:ellipsis;white-space:nowrap}
+.historyModal .historyTable td>small{display:flex;align-items:center;gap:6px;min-width:0;margin-top:6px;color:#8a94a6;font-size:10px;white-space:nowrap}
+.historyModal .historyAction{padding:3px 8px;border:1px solid transparent;border-radius:999px;font-size:9px;font-weight:800;line-height:1.2;letter-spacing:.03em}
+.historyModal .historyAction.insert{border-color:#bfe8d0;background:#eaf8f0;color:#18784a}
+.historyModal .historyAction.update{border-color:#ccd5ff;background:#edf0ff;color:#3f56c7}
+.historyModal .historyAction.delete{border-color:#f4c5ca;background:#fff0f1;color:#bd3945}
+.historyModal .historyTableWrap::-webkit-scrollbar{width:9px;height:9px}
+.historyModal .historyTableWrap::-webkit-scrollbar-track{background:#f1f4f8}
+.historyModal .historyTableWrap::-webkit-scrollbar-thumb{border:2px solid #f1f4f8;border-radius:999px;background:#bdc6d4}
+.historyModal .historyTableWrap::-webkit-scrollbar-thumb:hover{background:#98a5b7}
+.historyModal footer{background:#fff}
+@media(max-width:600px){.historyModal .historyBody{padding:14px}.historyModal .historyTableWrap{border-radius:9px}}
