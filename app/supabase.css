@@ -61,3 +61,7 @@
 .historyModal .historyTableWrap::-webkit-scrollbar-thumb:hover{background:#98a5b7}
 .historyModal footer{background:#fff}
 @media(max-width:600px){.historyModal .historyBody{padding:14px}.historyModal .historyTableWrap{border-radius:9px}}
+
+/* Show scrollbars only when the content actually overflows. */
+.panel .table{overflow-y:auto;scrollbar-gutter:auto}
+.historyModal .historyTableWrap{scrollbar-gutter:auto}
