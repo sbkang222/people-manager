@@ -5,7 +5,7 @@ type QueryLog = {
   operation: "select" | "insert" | "update" | "delete";
   table: "people";
   query: string;
-  sql: string;
+  sql?: string;
   status: "started" | "success" | "error";
   duration_ms?: number;
   record_id?: number;
