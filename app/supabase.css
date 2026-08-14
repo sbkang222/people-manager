@@ -3,3 +3,20 @@
 .notice.error{background:#fff0f1;border-color:#f4b9bd;color:#9c3037}
 .notice code{background:#ffffffa0;padding:2px 5px;border-radius:4px}
 .toolbarActions{display:flex;align-items:center;gap:10px}.excelButton{border:1px solid #cfd6e3;background:#fff;color:#315548;border-radius:8px;padding:9px 16px;font-weight:700;cursor:pointer}.excelButton:hover{background:#f3faf7}.excelButton:disabled{opacity:.55;cursor:not-allowed}@media(max-width:800px){.toolbarActions{align-items:stretch;flex-direction:column}.excelButton{width:100%}}
+
+/* Keep the list title/search/export toolbar fixed while the people rows scroll. */
+.panel .table{
+  max-height:clamp(280px,calc(100vh - 390px),560px);
+  overflow-x:auto;
+  overflow-y:scroll;
+  scrollbar-gutter:stable;
+}
+.panel .table thead th{
+  position:sticky;
+  top:0;
+  z-index:2;
+  box-shadow:0 1px 0 var(--line);
+}
+@media(max-width:800px){
+  .panel .table{max-height:420px}
+}
