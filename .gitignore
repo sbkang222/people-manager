@@ -1,6 +1,10 @@
 node_modules
 .next
 .npm-cache
+.vercel
+.vercel-config
+.vercel-data
+.local-app-data
 out
 .env
 .env.local
@@ -8,3 +12,6 @@ out
 !.env.example
 *.log
 *.pid
+logs/*.log
+
+.vercel
