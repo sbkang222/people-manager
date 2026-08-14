@@ -15,8 +15,13 @@
   position:sticky;
   top:0;
   z-index:2;
+  text-align:center;
   box-shadow:0 1px 0 var(--line);
 }
+.panel .table tbody td:nth-child(3),
+.panel .table tbody td:nth-child(4),
+.panel .table tbody td:nth-child(5),
+.panel .table tbody td:nth-child(6){text-align:center}
 @media(max-width:800px){
   .panel .table{max-height:420px}
 }
@@ -39,6 +44,7 @@
 .historyModal .historyTable tbody tr:last-child td{border-bottom:0}
 .historyModal .historyTable tbody tr:hover td{background:#f8faff}
 .historyModal .historyTable th:first-child,.historyModal .historyTable td:first-child{width:25%;text-align:left}
+.historyModal .historyTable th:first-child{text-align:center}
 .historyModal .historyTable th:nth-child(2),.historyModal .historyTable td:nth-child(2){width:20%;text-align:center}
 .historyModal .historyTable th:nth-child(3),.historyModal .historyTable td:nth-child(3){width:18%}
 .historyModal .historyTable th:nth-child(4),.historyModal .historyTable td:nth-child(4){width:17%}
