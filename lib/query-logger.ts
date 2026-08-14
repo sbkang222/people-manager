@@ -4,6 +4,7 @@ import path from "node:path";
 type QueryLog = {
   operation: "select" | "insert" | "update" | "delete";
   table: "people";
+  query: string;
   status: "started" | "success" | "error";
   duration_ms?: number;
   record_id?: number;
