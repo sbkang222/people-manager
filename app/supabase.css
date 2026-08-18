@@ -1,5 +1,5 @@
 .primary:disabled{opacity:.5;cursor:not-allowed}
-.titleIcon{display:inline-block;margin-right:9px;color:var(--blue);font-size:.62em;vertical-align:.16em}
+.titleIcon{display:inline-block;margin-right:9px;color:var(--blue);font-size:1em;font-weight:900;line-height:1;text-shadow:1px 0 currentColor,-1px 0 currentColor;vertical-align:.02em}
 .listTitleIcon{display:inline-block;margin-right:8px;color:var(--blue);font-size:1.1em;font-weight:900;line-height:1;text-shadow:1px 0 currentColor,-1px 0 currentColor;vertical-align:-.06em}
 .notice{display:flex;flex-direction:column;gap:6px;background:#fff8df;border:1px solid #f2d889;color:#795f0d;border-radius:10px;padding:14px 18px;margin-bottom:20px;font-size:13px}
 .notice.error{background:#fff0f1;border-color:#f4b9bd;color:#9c3037}
