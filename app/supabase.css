@@ -55,6 +55,7 @@
 .historyModal .historyAction.insert{border-color:#bfe8d0;background:#eaf8f0;color:#18784a}
 .historyModal .historyAction.update{border-color:#ccd5ff;background:#edf0ff;color:#3f56c7}
 .historyModal .historyAction.delete{border-color:#f4c5ca;background:#fff0f1;color:#bd3945}
+.historyModal .historyTable td.historyChanged,.historyModal .historyTable td.historyChanged>strong{color:#e5484d;font-weight:800}
 .historyModal .historyTableWrap::-webkit-scrollbar{width:9px;height:9px}
 .historyModal .historyTableWrap::-webkit-scrollbar-track{background:#f1f4f8}
 .historyModal .historyTableWrap::-webkit-scrollbar-thumb{border:2px solid #f1f4f8;border-radius:999px;background:#bdc6d4}
