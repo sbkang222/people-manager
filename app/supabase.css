@@ -18,6 +18,7 @@
   text-align:center;
   box-shadow:0 1px 0 var(--line);
 }
+.sortButton{display:inline-flex;align-items:center;justify-content:center;gap:6px;width:100%;padding:0;border:0;background:transparent;color:inherit;font:inherit;font-weight:inherit;cursor:pointer}.sortButton i{min-width:10px;color:#9aa5b6;font-size:9px;font-style:normal;opacity:0;transition:opacity .15s ease,color .15s ease}.sortButton:hover,.sortButton.active{color:var(--blue)}.sortButton:hover i,.sortButton:focus-visible i,.sortButton.active i{color:var(--blue);opacity:1}.sortButton:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
 .panel .table tbody td:nth-child(3),
 .panel .table tbody td:nth-child(4),
 .panel .table tbody td:nth-child(5),
